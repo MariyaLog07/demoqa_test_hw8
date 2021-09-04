@@ -1,8 +1,7 @@
-package ru.desnol;
+package ru.desnol.docs;
 
 import org.junit.jupiter.api.*;
-
-class DemoQATest {
+class Junit5Examples {
     @BeforeAll
     static void beforeAll(){
         System.out.println("Before all test!\n");
