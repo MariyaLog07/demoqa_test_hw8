@@ -20,13 +20,13 @@ public class TextBoxTests {
         open("https://demoqa.com/text-box");
         $("#userName").setValue("Mariya");
         $("#userEmail").setValue("Mashyly1994@gmail.com");
-        $("#currentAddress").setValue("Lermontova street,1");
+        $("input#currentAddress").setValue("Lermontova street,1");
         $("#permanentAddress").setValue("another street,1");
         $("#submit").scrollTo().click();
 
         $("#output #name").shouldHave(text("Mariya"));
         $("#output #email").shouldHave(text("Mashyly1994@gmail.com"));
-        $("#output #currentAddress").shouldHave(text("Lermontova street,1"));
+        $("#output p#currentAddress").shouldHave(text("Lermontova street,1"));
         $("#output #permanentAddress").shouldHave(text(permanentAddress));
     }
 }
