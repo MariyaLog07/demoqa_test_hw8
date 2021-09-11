@@ -36,7 +36,7 @@ public class CssXpathExamples {
         $(byName("email"));
 
         // <input type="email" class="inputtext login_form_input_box">
-        $(byClassName("login_form_input_box"));
+        $(("login_form_input_box"));
         $(".login_form_input_box");
         $(".inputtext.login_form_input_box");
         $x("//*[@class='login_form_input_box']");
